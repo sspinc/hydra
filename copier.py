@@ -185,7 +185,7 @@ def copy_indexes(source, dest):
         kwargs = { 'name': name }
         index_key = None
         for k, v in index.items():
-            if k in ['unique', 'sparse']:
+            if k in ['background', 'unique', 'sparse']:
                 kwargs[k] = v
             elif k == 'v':
                 continue
